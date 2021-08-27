@@ -1,1 +1,2 @@
-# Respositório dedicado ao estudo de Java.
+# Java
+Repositório dedicado ao estudo de Java.
