@@ -11,6 +11,7 @@ public class Aula05EstruturasCondicionais02 {
         se idade >= 18 categoria adulto
 
         TODA VARIAVEL DE ESCOPO LOCAL DEVE SER INICIALIZADA ANTES DE SER EXECUTADA
+        UMA OPÇÃO SERIA ATRIBUIR UM VALOR VAZIO A VARIÁVEL, EX. String categoria = "";
          */
         int idade = 19;
         String categoria;

@@ -14,6 +14,7 @@ public class Aula05EstruturasCondicionais03 {
 }
     /*
     JEITO INADEQUADO DE USAR O OPERADOR TERNARIO
+    NÃO DEVE SER USADO QUANDO EXISTE MAIS DE DUAS CONDIÇÕES, O CÓDIGO FICA CONFUSO
 
     int idade = 19;
     String categoria;

@@ -15,7 +15,7 @@ public class Aula05EstruturasCondicionais01 {
         System.out.println("Autorizado a comprar bebida alcoolica");
     }
     if(!isAutorizadoComprarBebida){ //Pode usar o !(not) no lugar do else caso a proposição não seja verdade
-                                    //porém esta fomra é independente
+                                    //porém esta forma é independente
         System.out.println("Não autorizado a comprar bebida alcoolica");
     }
     }
