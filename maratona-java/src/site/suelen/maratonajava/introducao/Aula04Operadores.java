@@ -13,15 +13,15 @@ public class Aula04Operadores {
         double divisao = numero01 / numero02;
         double multiplicacao = numero01 * numero02;
         /*
-        se o cálculo for entre dois números do tipo int, por exemplo, o resultado tambem será int,
-        ao menos uma das variáveis envolvidas no calculo deve ser do tipo que se deseja obter o valor
+        se o cálculo for entre dois números do tipo int, por exemplo, o resultado também será int,
+        ao menos uma das variáveis envolvidas no cálculo deve ser do tipo que se deseja obter o valor
         */
         System.out.println(soma);
         System.out.println(subtracao);
         System.out.println(divisao);
         System.out.println(multiplicacao);
         /*
-        toda soma que estiver após uma string será considerada como
+        Toda soma que estiver após uma string será considerada como
         concatenação, e a soma que estiver antes será considerada como operação
         */
         System.out.println(numero01+numero02+"Valor "+numero01+numero02);

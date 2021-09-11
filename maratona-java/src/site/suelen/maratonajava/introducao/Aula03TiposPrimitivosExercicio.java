@@ -13,7 +13,7 @@ public class Aula03TiposPrimitivosExercicio {
         String endereco = "São João da Madeira 33";
         float salario = 5000.50F;
         String dataRecebimentoSalario = "01/04/2021";
-        //o texto pode ser impresso tanto pelo println quanto usando o String e imprimindo a variavel no println
+        //O texto pode ser impresso tanto pelo println quanto usando o String e imprimindo a variável no println
         String relatorio = "Eu " + nome + ", morando no endereço " + endereco + ", confirmo que recebi o salário de " + salario + ", na data " + dataRecebimentoSalario;
         System.out.println(relatorio);
     }

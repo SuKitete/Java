@@ -4,10 +4,12 @@ public class Aula05EstruturasCondicionais05 {
     public static void main(String[] args) {
         /*
         SWITCH
-        sintaxe -> switch(variavel){case}
+        sintaxe -> switch(variável){
+        case valor aqui:
+        }
 
         Usado para condicionais simples, para fazer uma pequena escolha
-        Importante colocar o break após cada condição, para que ele execute apenas a condiçõo correta;
+        Importante colocar o break após cada condição, para que ele execute apenas a condição correta;
 
         Os tipos aceitos são: char, int, byte, String, short, enum
          */

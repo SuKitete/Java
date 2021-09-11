@@ -3,18 +3,18 @@ package site.suelen.maratonajava.introducao;
 public class Aula02TiposPrimitivos {
     public static void main(String[] args) {
         /* int, double, float, char, byte, short, long, boolean
-        O nome da variavel deve começar com letra minuscula,
+        O nome da variável deve começar com letra minuscula,
         se for nome composto as palavras seguintes iniciam com letra maiuscula
         */
-        int idade = 10; //inteiro para numeros menores
-        long numeroGrande = 100000; //inteiro para numeros maiores
+        int idade = 10; //inteiro para números menores
+        long numeroGrande = 100000; //inteiro para números maiores
         double salarioDouble = 2000;
         float salarioFloat = 2500.0F;//A IDE não entende que é um float, então coloca o F para mostrar que é float
         byte idadeByte = 10;
         short idadeShort = 10;
         boolean verdadeiro = true;
         boolean falso = false;
-        char caractereAscii = 65; //ao colocar um valor numerico em char ele converte para letra da tabela ASCII
+        char caractereAscii = 65; //ao colocar um valor numérico em char ele converte para letra da tabela ASCII
         char caractereUnicode = '\u0042';
         String nome = "Suelen";
 
