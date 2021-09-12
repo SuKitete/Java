@@ -8,11 +8,10 @@ public class Aula07Arrays01 {
         Arrays são considerados objetos
         Um array por ser uma variável do tipo reference pode ser inicializada com null
         O valor do índice (posição) sempre inicia pelo 0
-
-        Exemplo -> int [] idades = new int [3]; O 3 é a quantidade de memória que está sendo alocada
         */
 
-        int[] idades = new int[3];
+        //Exemplo de array
+        int[] idades = new int[3];//O 3 é a quantidade de memória que está sendo alocada
         idades[0] = 21;
         idades[1] = 15;
         idades[2] = 11;
