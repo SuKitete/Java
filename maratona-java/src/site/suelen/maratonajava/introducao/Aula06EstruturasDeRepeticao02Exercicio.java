@@ -5,7 +5,7 @@ public class Aula06EstruturasDeRepeticao02Exercicio {
 
     //Imprima todos os pares de 0 até 10000
         for(int i = 0; i <= 10000; i++)
-            if(i % 2 == 0){ //Importante pensar no futuro e criar um código que seja de fácil manutenção
+            if(i % 2 == 0){
                 System.out.println(i);
             }
 
