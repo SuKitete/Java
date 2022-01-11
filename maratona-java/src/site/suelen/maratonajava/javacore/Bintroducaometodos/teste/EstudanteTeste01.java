@@ -8,7 +8,6 @@ public class EstudanteTeste01 {
 
         Estudante estudante01 = new Estudante();
         Estudante estudante02 = new Estudante();
-        Estudante estudante03 = new Estudante();
         ImpressoraEstudante imprime = new ImpressoraEstudante();
 
         estudante01.nome = "Ana";
@@ -19,14 +18,21 @@ public class EstudanteTeste01 {
         estudante02.idade = 15;
         estudante02.sexo = 'M';
 
-        estudante03.nome = "Paulo";
-        estudante03.idade = 18;
-        estudante03.sexo = 'M';
-
         imprime.impressora(estudante01);
 
         imprime.impressora(estudante02);
 
-        imprime.impressora(estudante03);
+        System.out.println("----------");
+
+        imprime.impressora2(estudante01);
+
+        imprime.impressora2(estudante02);
+
+        System.out.println("#########");
+
+        imprime.impressora2(estudante01);
+
+        imprime.impressora2(estudante02);
+
     }
 }
