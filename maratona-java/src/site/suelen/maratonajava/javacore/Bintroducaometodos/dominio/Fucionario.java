@@ -18,6 +18,7 @@ public class Fucionario {
             }
         mediaSalario();
         }
+
         public void mediaSalario(){
         if(this.salarios == null){
             return;

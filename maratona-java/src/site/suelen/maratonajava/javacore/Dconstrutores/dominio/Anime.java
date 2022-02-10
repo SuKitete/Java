@@ -15,7 +15,6 @@ package site.suelen.maratonajava.javacore.Dconstrutores.dominio;
         Para iniciar sem parâmetro pode criar uma sobrecarga de
         construtor e fazer um outro construtor sem parâmetros
         Também é possível fazer uma sobrecarga de construtor para incluir novos parâmetros
-
          */
         public Anime(String nome, String tipo, int espisodios, String genero){
             this.nome = nome;

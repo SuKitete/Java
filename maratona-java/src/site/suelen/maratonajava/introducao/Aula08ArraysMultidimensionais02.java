@@ -8,7 +8,7 @@ public class Aula08ArraysMultidimensionais02 {
         int array[] = {1, 2, 3};
 
         arrayInt[0] = new int[]{1, 2,};//É possível atribuir valor desta forma,
-        arrayInt[1] = new int[]{1, 2, 3, 4, 5};//podendo colocar diferntes tamanhos para o array
+        arrayInt[1] = new int[]{1, 2, 3, 4, 5};//podendo colocar diferentes tamanhos para o array
         arrayInt[2] = array;
 
         //Outra forma de atribuir valor a um array multidimensional

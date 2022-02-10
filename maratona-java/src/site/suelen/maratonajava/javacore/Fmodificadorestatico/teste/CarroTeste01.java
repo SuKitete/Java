@@ -14,9 +14,9 @@ public class CarroTeste01 {
         carro3.imprime();
         */
 
-        System.out.println(Carro.velocidadeLimite);
-        Carro.velocidadeLimite = 180;
-        System.out.println(Carro.velocidadeLimite);
+        System.out.println(Carro.getVelocidadeLimite());
+        Carro.setVelocidadeLimite(180);
+        System.out.println(Carro.getVelocidadeLimite());
     }
 
 }

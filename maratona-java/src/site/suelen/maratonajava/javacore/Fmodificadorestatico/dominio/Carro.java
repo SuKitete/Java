@@ -3,7 +3,7 @@ package site.suelen.maratonajava.javacore.Fmodificadorestatico.dominio;
 public class Carro {
     private String nome;
     private double velocidadeMaxima;
-    public static double velocidadeLimite = 250;
+    private static double velocidadeLimite = 250;
     /*
     MODIFICADOR DE ACESSO ESTÁTICO
     Faz com que o atributo pertença a classe
@@ -21,6 +21,19 @@ public class Carro {
         System.out.println(this.nome);
         System.out.println(this.velocidadeMaxima);
         System.out.println(Carro.velocidadeLimite);
+    }
+
+    /*
+    MÉTODO ESTÁTICO
+    As boas práticas dizem que um método estático pode ser usado quando ele
+    não acessa nenhum atributo da instância
+     */
+    public static void setVelocidadeLimite(double velocidadeLimite){
+        Carro.velocidadeLimite = velocidadeLimite;
+    }
+
+    public static double getVelocidadeLimite(){
+        return Carro.velocidadeLimite;
     }
 
     public void setNome(String nome) {

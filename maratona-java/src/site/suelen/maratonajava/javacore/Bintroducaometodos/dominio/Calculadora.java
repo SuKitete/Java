@@ -58,9 +58,9 @@ public class Calculadora {
         System.out.println(soma);
     }
 
-    public void somaVarArgs(double valor, int... numeros){
-        int soma = 0;
-        for(int num: numeros){
+    public void somaVarArgs(double valor, int... numeros){//Varargs, outra forma de representar arrays
+        int soma = 0;                                     //Outra forma de passar vários elementos
+        for(int num: numeros){                            //do mesmo tipo para um método
             soma += num;
         }
         System.out.println(soma+valor);
