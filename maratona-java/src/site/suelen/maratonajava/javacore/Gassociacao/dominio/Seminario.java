@@ -4,26 +4,10 @@ public class Seminario {
     private String titulo;
     private Aluno[] alunos;
     private Local local;
-    private Professor2 professor;
 
-    public Seminario(String titulo, Local local){
+    public Seminario(String titulo, Local local) {
         this.titulo = titulo;
         this.local = local;
-    }
-
-    public void imprime(){
-        System.out.println("Título: "+this.titulo);
-        System.out.println("Endereço: "+local.getEndereco());
-        if(professor != null) {
-            System.out.println("Nome do Professor: " + professor.getNome());
-            System.out.println("Especialidade do Professor " + professor.getNome() + ": " + professor.getEspecialidade());
-        }
-        if(alunos != null){
-            for(Aluno aluno: alunos){
-                System.out.println("Nome do Aluno: "+aluno.getNome());
-                System.out.println("Idade do Aluno "+aluno.getNome()+": "+aluno.getIdade());
-            }
-        }
     }
 
     public String getTitulo() {
@@ -42,11 +26,11 @@ public class Seminario {
         this.alunos = alunos;
     }
 
-    public Professor2 getProfessor() {
-        return professor;
+    public Local getLocal() {
+        return local;
     }
 
-    public void setProfessor(Professor2 professor) {
-        this.professor = professor;
+    public void setLocal(Local local) {
+        this.local = local;
     }
 }

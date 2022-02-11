@@ -11,14 +11,24 @@ public class Professor2 {
     }
 
     public void imprime(){
-        System.out.println(this.nome);
-        System.out.println(this.especialidade);
-        if(seminarios != null){
-            for(Seminario seminario: seminarios){
-                System.out.println(seminario.getTitulo());
+        System.out.println("****DADOS DO SEMINÁRIO****\n");
+        for(Seminario seminario: seminarios){
+            System.out.println("Título: "+seminario.getTitulo());
+            System.out.println("Endereço: "+seminario.getLocal().getEndereco());
+        }
+        if(this.nome != null) {
+            System.out.println("\n******PALESTRANTE******\n");
+            System.out.println("Nome do Professor: " + this.nome);
+            System.out.println("Especialidade do Professor: " + this.especialidade);
+        }
+        System.out.println("\n******PARTICIPANTES******\n");
+            for(Seminario seminario: this.seminarios){
+                if(seminario.getAlunos() == null) return;
+                for(Aluno aluno: seminario.getAlunos()) {
+                    System.out.println("Aluno: " + aluno.getNome() + "\nIdade do Aluno: " + aluno.getIdade());
+                }
             }
         }
-    }
 
     public String getNome() {
         return nome;
