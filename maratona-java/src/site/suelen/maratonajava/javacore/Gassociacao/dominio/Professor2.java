@@ -5,30 +5,27 @@ public class Professor2 {
     private String especialidade;
     private Seminario[] seminarios;
 
-    public Professor2(String nome, String especialidade){
+    public Professor2(String nome, String especialidade) {
         this.nome = nome;
         this.especialidade = especialidade;
     }
 
-    public void imprime(){
+    public void imprime() {
         System.out.println("****DADOS DO SEMINÁRIO****\n");
-        for(Seminario seminario: seminarios){
-            System.out.println("Título: "+seminario.getTitulo());
-            System.out.println("Endereço: "+seminario.getLocal().getEndereco());
-        }
-        if(this.nome != null) {
+        if (this.seminarios == null) return;
+        for (Seminario seminario : this.seminarios) {
+            System.out.println("Título: " + seminario.getTitulo());
+            System.out.println("Endereço: " + seminario.getLocal().getEndereco());
             System.out.println("\n******PALESTRANTE******\n");
             System.out.println("Nome do Professor: " + this.nome);
             System.out.println("Especialidade do Professor: " + this.especialidade);
-        }
-        System.out.println("\n******PARTICIPANTES******\n");
-            for(Seminario seminario: this.seminarios){
-                if(seminario.getAlunos() == null) return;
-                for(Aluno aluno: seminario.getAlunos()) {
-                    System.out.println("Aluno: " + aluno.getNome() + "\nIdade do Aluno: " + aluno.getIdade());
-                }
+            System.out.println("\n******PARTICIPANTES******\n");
+            if (seminario.getAlunos() == null || seminario.getAlunos().length == 0) continue;
+            for (Aluno aluno : seminario.getAlunos()) {
+                System.out.println("Aluno: " + aluno.getNome() + "\nIdade do Aluno: " + aluno.getIdade());
             }
         }
+    }
 
     public String getNome() {
         return nome;

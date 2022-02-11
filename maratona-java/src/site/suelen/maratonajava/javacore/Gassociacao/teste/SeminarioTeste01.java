@@ -25,16 +25,18 @@ local: endereço
 public class SeminarioTeste01 {
     public static void main(String[] args) {
         Local local = new Local("Rua Turing");
-        Seminario seminario1 = new Seminario("Programação Para Jogos", local);
+        Aluno aluno = new Aluno("João", 15);
+        Professor2 professor = new Professor2("Lucas", "Desenvolvedor");
+
+        Aluno[] alunos = {aluno};
+
+        Seminario seminario1 = new Seminario("Programação Para Jogos", local, alunos);
+
         Seminario[] seminarios = {seminario1};
-        Aluno aluno1 = new Aluno("João", 15);
-        Aluno[] alunos = {aluno1};
-        Professor2 professor1 = new Professor2("Lucas", "Desenvolvedor");
 
-        professor1.setSeminarios(seminarios);
-        seminario1.setAlunos(alunos);
+        professor.setSeminarios(seminarios);
 
-        professor1.imprime();
+        professor.imprime();
 
     }
 }

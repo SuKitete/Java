@@ -10,6 +10,12 @@ public class Seminario {
         this.local = local;
     }
 
+    public Seminario(String titulo, Local local, Aluno[] alunos) {
+        this.titulo = titulo;
+        this.alunos = alunos;
+        this.local = local;
+    }
+
     public String getTitulo() {
         return titulo;
     }
