@@ -17,6 +17,20 @@ public class Funcionario extends Pessoa {
     private double salario;
 
     /*
+    Construtor em herança
+    Após criar um construtor na classe pai é necessário criar um construtor para a subclasse
+    Como a subclasse tem os mesmos campos da classe pai o construtor também será exigido
+    Como no método, é necessário usar a palavra super na subclasse para incluir o atributo no construtor
+    */
+    public Funcionario(String nome){
+        super(nome);//super para incluir o atributo no construtor
+    }
+
+    public Funcionario(String nome, String cpf){
+        super(nome, cpf);
+    }
+
+    /*
     SUPER
     Executa o método da forma que foi descrito na classe pai
      */
