@@ -22,8 +22,25 @@ public class Funcionario extends Pessoa {
     Como a subclasse tem os mesmos campos da classe pai o construtor também será exigido
     Como no método, é necessário usar a palavra super na subclasse para incluir o atributo no construtor
     */
+    //public Funcionario(String nome){
+      //  super(nome);//super para incluir o atributo da subclasse no construtor
+    //}
+
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de funcionário");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de funcionário 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de funcionário 2");
+    }
+
     public Funcionario(String nome){
-        super(nome);//super para incluir o atributo no construtor
+        super(nome);
+        System.out.println("Dentro do construtor de funcionário");
     }
 
     public Funcionario(String nome, String cpf){

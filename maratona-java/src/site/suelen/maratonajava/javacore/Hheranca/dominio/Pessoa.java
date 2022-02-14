@@ -10,13 +10,30 @@ public class Pessoa {
     private String cpf;
     private Endereco endereco;
 
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de pessoa");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 2");
+    }
+
+    public Pessoa(String nome){
+        System.out.println("Dentro do construtor de pessoa");
+      this.nome = nome;
+    }
+
     /*
     Construtor em herança
     Após criar um construtor na classe pai é necessário criar um construtor para a subclasse
      */
-    public Pessoa(String nome){
-        this.nome = nome;
-    }
+    //public Pessoa(String nome){
+      //  this.nome = nome;
+    //}
 
     public Pessoa(String nome, String cpf){
         this(nome);
