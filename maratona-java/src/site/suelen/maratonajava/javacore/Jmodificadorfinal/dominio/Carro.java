@@ -1,9 +1,27 @@
 package site.suelen.maratonajava.javacore.Jmodificadorfinal.dominio;
 
 public class Carro {
+    //public final class Carro {
     private String nome;
     public static final double VELOCIDADE_LIMITE = 250;
+    public final Comprador COMPRADOR = new Comprador();//A referência que a variável COMPRADOR tem para o objeto nunca poderá ser alterada
+     /*
+
+    FINAL CLASSES E MÉTODOS
+    Tem a ver com o conceito de herança.
+    Quando o modificador final é usado na classe essa classe não pode ser estendida
+    Quando o modifficador final é usado no método, esse método não pode ser sobrescrito
+    */
+
+    public final void imprime(){
+    System.out.println(this.nome);
+    }
+
     /*
+    FINAL TIPO REFERÊNCIA
+    Quando o final é usado com um tipo reference, a referência que a variável tem para o objeto não pode ser modificado, porém, os dados sim
+    É muito útil no padrão singleton, pois nesse padrão é utilizado somente uma instância
+
     FINAL
     Define um valor constante para a variável, também pode ser usado na classe
     Por ser uma constante, a variável deve ser inicializada com o valor desejado

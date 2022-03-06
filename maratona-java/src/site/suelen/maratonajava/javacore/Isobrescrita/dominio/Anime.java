@@ -14,14 +14,14 @@ public class Anime extends Object {
     /*
     Regras para sobrescrever
     O nome precisa ser o mesmo
-    A quantidade precisa ser a mesma, independente de ter ou não parâmetros
+    A quantidade de parâmetros precisa ser a mesma, independente de ter ou não parâmetros
     O tipo de retorno tem que ser a classe ou a subclasse
-    O modificador de acesso não pode ser mais restritivo, public é modificador de acesso mais aberto
+    O modificador de acesso não pode ser mais restritivo, public é o modificador de acesso mais aberto
      */
     @Override//@Override garante que está sobrescrevendo o método toString, caso aconteça um erro de escrita não criar um método
     public String toString() {
         return "Anime: " + this.nome;
-    }
+    }//Com o toString não foi necessário o uso do método imprime
 
     public Anime(String nome) {
         this.nome = nome;
