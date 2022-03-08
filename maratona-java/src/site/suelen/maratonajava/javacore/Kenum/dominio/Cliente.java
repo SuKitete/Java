@@ -1,9 +1,9 @@
 package site.suelen.maratonajava.javacore.Kenum.dominio;
 
 public class Cliente {
-    public enum TipoPagamento{//Também é possível usar o enum dentro de uma classe
-        DEBITO, CREDITO
-    }
+   // public enum TipoPagamento{//Também é possível usar o enum dentro de uma classe
+    //    DEBITO, CREDITO
+    //}
     private String nome;
     private TipoCliente tipoCliente;//Enum
     private TipoPagamento tipoPagamento;//Mesmo dentro da classe o enum deve ser atribuído a uma variável

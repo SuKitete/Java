@@ -17,6 +17,17 @@ public enum TipoCliente {
         this.nomeRelatorio = nomeRelatorio;
     }
 
+    //Busca por atributo
+    //Buscando a enumeração(PESSOA_FISICA ou PESSOA_JURIDICA) pelo atributo nomeRelatorio
+    public static TipoCliente TipoClientePorNomeRelatorio(String nomeRelatorio){
+        for(TipoCliente tipoCliente : values()){//O values percorre todas as enumerações, deve ser iterado
+            if(tipoCliente.getNomeRelatorio().equals(nomeRelatorio)){
+                return tipoCliente;
+            }
+        }
+        return null;
+    }
+
     public int getValor(){
         return this.valor;
     }
